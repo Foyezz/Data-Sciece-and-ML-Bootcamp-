@@ -6,7 +6,7 @@
   <link rel='stylesheet' href='css/styles.css'>
   <!-- Custom font -->
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Just+Another+Hand&display=swap'>
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
 
   <!-- TODO: Add Javascript files here -->
 
@@ -31,6 +31,16 @@
   </div>
 
   <!-- TODO: Set up TF model and drawing logic-->
+  <script>
+    async function loadModel() {
+
+      const model = await tf.loadGraphModel('TFJS/model.json')
+      console.log(model);
+    }
+
+loadModel();
+
+  </script>
 
 </body>
 
