@@ -87,7 +87,7 @@ function predictImage() {
     const result = model.predict(X);
     result.print();
     
-    console.log(tf.memory());
+    //console.log(tf.memory());
 
     //test code 
 
