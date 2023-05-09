@@ -7,7 +7,7 @@ async function loadModel() {
 }
 
 function predictImage() {
-    console.log('Processing ....');
+    //console.log('Processing ....');
 
     let image = cv.imread(canvas);
     cv.cvtColor(image, image, cv.COLOR_RGBA2GRAY, 0);
