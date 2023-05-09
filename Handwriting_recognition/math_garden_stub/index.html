@@ -17,6 +17,7 @@
   <!-- TODO: Add Javascript files here -->
   <script src="drawing.js"></script>
   <script src="processing.js"></script>
+  <script src="maths.js"></script>
 
 </head>
 
@@ -43,11 +44,13 @@
 
     loadModel();
     prepareCanvas();
+    nextQuestion();
 
     document.getElementById('checkAnswer').addEventListener('click', function () {
 
-      predictImage();
+      checkAnswer();
       clearCanvas();
+      nextQuestion();
     })
 
   </script>
