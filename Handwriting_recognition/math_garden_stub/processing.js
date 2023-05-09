@@ -85,9 +85,11 @@ function predictImage() {
     // Making the prediction
 
     const result = model.predict(X);
-    result.print();
+    //result.print();
     
     //console.log(tf.memory());
+
+    const output = result.dataSync()[0];
 
     //test code 
 
@@ -106,5 +108,7 @@ function predictImage() {
     // clear the memory
     X.dispose();
     result.dispose();
+
+    return output;
 
 }
