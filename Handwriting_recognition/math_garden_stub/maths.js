@@ -34,15 +34,17 @@ function checkAnswer() {
         }
         
     }   else {
-        if (score != 0) {score--;}
-        //console.log('Incorrect!');
-        alert('Oops check your calculation and try writing the number next time!');
-        setTimeout(function () {
-
+        if (score != 0) {
+                        
+            score--;
+            alert('Oops check your calculation!');
             backgroundImages.pop();
             document.body.style.backgroundImage = backgroundImages;
-
-        }, 1000);
+        
+        }
+        //console.log('Incorrect!');
+        
+        
     }
     console.log(score);
 }
